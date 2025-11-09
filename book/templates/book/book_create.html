@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+{% block title %} 書籍作成ページ {% endblock %} 
+{%block content %}
+
+<form action="" method="POST">{% csrf_token %}
+    {{form.as_p}}
+    <Input class="btn btn-success" type="submit" value="作成"></Input>
+</form>
+
+{% endblock %}

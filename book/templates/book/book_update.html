@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+{% block title %} 書籍修正ページ {% endblock %} 
+{%block content %}
+
+<form action="" method="POST">{% csrf_token %}
+    {{form.as_p}}
+    <Input class="btn btn-success" type="submit" value="更新"></Input>
+</form>
+
+{% endblock %}

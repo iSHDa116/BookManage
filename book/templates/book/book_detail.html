@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block title %} 書籍詳細 {% endblock %} 
+{% block content %}
+
+<div class="card">
+  <div class="card-header">{{object.category}}</div>
+  <div class="card-body">
+    <h5 class="card-title">{{object.title}}</h5>
+    <p class="card-text">{{object.writter}}</p>
+    <a href="#" class="btn btn-success">詳細</a>
+    <h6 class="card-title">{{object.category}}</h6>
+  </div>
+</div>
+{% endblock %}
