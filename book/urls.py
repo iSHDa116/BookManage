@@ -15,4 +15,8 @@ urlpatterns = [
     #編集画面
     path('book/<int:pk>/update', views.UpdateBookViews.as_view(), name='update-book'),
     #path('logout/' , views.logout_view, name='logout'),
+    path('book/<int:book_id>/review', views.CreateReviewView.as_view(), name='review'),
+    #わかってることを説明できる
+    #ログイン名 を出せる
+    #ちょっとAWsを触る意味でデータベース
 ]
